@@ -53,6 +53,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
   height: 100%;
   box-sizing: border-box; }
+  body.lock {
+    overflow-y: hidden; }
 
 .container {
   max-width: 1200px;
@@ -67,8 +69,7 @@ body {
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
     padding: 25px 0 25px 0;
     margin-bottom: 33px;
-    position: relative;
-    z-index: 3; }
+    position: relative; }
     @media screen and (max-width: 768px) {
       .header .logo_row {
         padding: 10px; } }
@@ -80,7 +81,8 @@ body {
         display: none;
         position: fixed;
         width: 30px;
-        height: 20px; }
+        height: 20px;
+        z-index: 100; }
         @media screen and (max-width: 768px) {
           .header .logo_row .container .header_burger {
             display: block; } }
@@ -182,7 +184,11 @@ body {
         border-bottom: inherit; } }
   .header .menu {
     position: relative;
-    z-index: 2; }
+    z-index: 10; }
+    .header .menu .burger_logo > img {
+      display: block;
+      width: 40%;
+      margin-bottom: 30px; }
     @media screen and (max-width: 768px) {
       .header .menu {
         position: fixed;
