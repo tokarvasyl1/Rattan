@@ -92,9 +92,20 @@ h1, h2, h3, h4, h5, h6 {
 body {
   height: 100%;
   box-sizing: border-box;
-  &.lock{
+
+  &.lock {
     overflow-y: hidden;
   }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 .container {
@@ -285,11 +296,21 @@ body {
   .menu {
     position: relative;
     z-index: 10;
-    .burger_logo>img{
-      display: block;
-      width: 40%;
-      margin-bottom: 30px;
+
+    .burger_logo {
+      display: none;
+      @include max-screen(768px) {
+        display: block;
+      }
+
+      img {
+        display: block;
+        width: 30%;
+        margin-bottom: 30px;
+
+      }
     }
+
     @include max-screen(768px) {
       position: fixed;
       top: -100%;
