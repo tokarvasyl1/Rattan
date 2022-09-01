@@ -78,8 +78,8 @@ body {
       align-items: center; }
       .header .logo_row .container .header_burger {
         display: none;
-        position: relative;
-        width: 35px;
+        position: fixed;
+        width: 30px;
         height: 20px; }
         @media screen and (max-width: 768px) {
           .header .logo_row .container .header_burger {
@@ -224,6 +224,9 @@ body {
     background: #F5F5F5;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px; }
+    @media screen and (max-width: 768px) {
+      .header .sub-menu__list {
+        border-radius: inherit; } }
   .header .sub-menu__list > li:before {
     content: "\f6c0";
     display: inline-block;
@@ -293,27 +296,27 @@ body.touch .arrow {
 .slider {
   margin-bottom: 85px; }
   .slider .container .slider_item {
-    position: relative;
+    background-image: url("../images/BG-min.jpg");
+    background-size: cover;
     border-radius: 25px;
     overflow: hidden;
-    height: 466px; }
-    .slider .container .slider_item img {
-      display: block;
-      width: 100%;
-      object-fit: cover; }
+    height: 466px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .slider .container .slider_item {
+        height: 300px; } }
     .slider .container .slider_item h2 {
       font-family: 'Alegreya Sans 700', serif;
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
       color: #FFFFFF;
-      position: absolute;
-      top: 150px;
-      left: 100px; }
+      margin-bottom: 30px; }
     .slider .container .slider_item a {
-      position: absolute;
-      top: 250px;
-      left: 100px;
       font-family: 'Alegreya Sans 400', serif;
       font-style: normal;
       font-weight: 400;

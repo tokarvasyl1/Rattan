@@ -113,7 +113,7 @@ body {
     margin-bottom: 33px;
     position: relative;
     z-index: 3;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       padding: 10px;
     }
 
@@ -125,13 +125,14 @@ body {
 
       .header_burger {
         display: none;
-        position: relative;
-        width: 35px;
+        position: fixed;
+        width: 30px;
         height: 20px;
-        @include max-screen(768px){
+        @include max-screen(768px) {
           display: block;
         }
-        span{
+
+        span {
           position: absolute;
           background-color: #2E8B1F;
           left: 0;
@@ -140,8 +141,9 @@ body {
           top: 9px;
           transition: all 0.4s ease 0s;
         }
-        &:before, &:after{
-        content: "";
+
+        &:before, &:after {
+          content: "";
           background-color: #2E8B1F;
           position: absolute;
           width: 100%;
@@ -149,37 +151,43 @@ body {
           left: 0;
           transition: all 0.4s ease 0s;
         }
-        &:before{
+
+        &:before {
           top: 0;
         }
-        &:after{
+
+        &:after {
           bottom: 0;
         }
-        &.active:before{
+
+        &.active:before {
           transform: rotate(45deg);
           top: 9px;
         }
-        &.active:after{
+
+        &.active:after {
           transform: rotate(-45deg);
           bottom: 9px;
         }
-        &.active span{
-          transform: scale(0 );
+
+        &.active span {
+          transform: scale(0);
         }
       }
 
       .logo {
-        @include max-screen(768px){
+        @include max-screen(768px) {
           margin: auto;
 
         }
+
         img {
           display: block;
           width: 100%;
-          @include max-screen(900px){
+          @include max-screen(900px) {
             width: 80%;
           }
-          @include max-screen(768px){
+          @include max-screen(768px) {
             //width: 100%;
           }
 
@@ -187,18 +195,19 @@ body {
       }
 
       .header_pages {
-        @include max-screen(768px){
+        @include max-screen(768px) {
           display: none;
         }
+
         ul {
           display: flex;
 
           li {
             margin-right: 69px;
-            @include max-screen(980px){
+            @include max-screen(980px) {
               margin-right: 40px;
             }
-            @include max-screen(800px){
+            @include max-screen(800px) {
               margin-right: 25px;
             }
 
@@ -209,7 +218,7 @@ body {
               font-size: 18px;
               letter-spacing: 0.015em;
               color: #000000;
-              @include max-screen(850px){
+              @include max-screen(850px) {
                 font-size: 15px;
               }
             }
@@ -227,7 +236,7 @@ body {
 
         .language-switch {
           margin-right: 50px;
-          @include max-screen(1050px){
+          @include max-screen(1050px) {
             display: none;
           }
         }
@@ -240,7 +249,7 @@ body {
             font-size: 16px;
             letter-spacing: 0.015em;
             color: #000000;
-            @include max-screen(768px){
+            @include max-screen(768px) {
               display: none;
             }
           }
@@ -252,7 +261,7 @@ body {
             font-size: 13px;
             letter-spacing: 0.015em;
             color: #000000;
-            @include max-screen(768px){
+            @include max-screen(768px) {
               display: none;
             }
           }
@@ -264,7 +273,7 @@ body {
   .menu_line {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 85px;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       border-bottom: inherit;
     }
   }
@@ -272,7 +281,7 @@ body {
   .menu {
     position: relative;
     z-index: 2;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       position: fixed;
       top: -100%;
       left: 0;
@@ -283,7 +292,8 @@ body {
       padding: 80px 15px;
 
     }
-    &.active{
+
+    &.active {
       top: 0;
       transition: all 0.4s ease 0s;
     }
@@ -330,6 +340,9 @@ body {
     background: #F5F5F5;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    @include max-screen(768px) {
+      border-radius: inherit;
+    }
 
   }
 
@@ -440,16 +453,20 @@ body.touch .arrow {
 
   .container {
     .slider_item {
-      position: relative;
+      background-image: url("../images/BG-min.jpg");
+      background-size: cover;
       border-radius: 25px;
       overflow: hidden;
       height: 466px;
-
-      img {
-        display: block;
-        width: 100%;
-        object-fit: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      @include max-screen(768px) {
+        height: 300px;
       }
+
 
       h2 {
         font-family: 'Alegreya Sans 700', serif;
@@ -457,15 +474,11 @@ body.touch .arrow {
         font-weight: 700;
         font-size: 48px;
         color: #FFFFFF;
-        position: absolute;
-        top: 150px;
-        left: 100px;
+        margin-bottom: 30px;
       }
 
       a {
-        position: absolute;
-        top: 250px;
-        left: 100px;
+
         font-family: 'Alegreya Sans 400', serif;
         font-style: normal;
         font-weight: 400;
@@ -792,6 +805,7 @@ body.touch .arrow {
 
 //===================================
 
+
 //===================================
 .footer {
   background: #FFFFFF;
@@ -819,6 +833,7 @@ body.touch .arrow {
         order: 4;
         text-align: center;
       }
+
       img {
         display: block;
         width: 80%;
@@ -840,8 +855,9 @@ body.touch .arrow {
         color: #000000;
         opacity: 0.6;
         margin-bottom: 19px;
-        &:first-of-type{
-          opacity: 1  ;
+
+        &:first-of-type {
+          opacity: 1;
         }
       }
     }
@@ -854,7 +870,6 @@ body.touch .arrow {
         flex-basis: 40%;
         order: 1;
       }
-
 
 
       h4 {
@@ -932,7 +947,8 @@ body.touch .arrow {
         color: #000000;
 
       }
-      .footer_tel{
+
+      .footer_tel {
         font-family: 'Alegreya Sans 500', serif;
         font-style: normal;
         font-weight: 500;
@@ -944,7 +960,8 @@ body.touch .arrow {
 
 
       }
-      .footer_social{
+
+      .footer_social {
         display: flex;
         justify-content: space-between;
         @include max-screen(800px) {
@@ -953,28 +970,33 @@ body.touch .arrow {
         @include max-screen(400px) {
           margin-bottom: 30px;
         }
-        a{
+
+        a {
           display: block;
         }
-        span:before{
+
+        span:before {
           content: "";
           display: inline-block;
         }
-        .inst:before{
+
+        .inst:before {
           content: "\f16d";
           font-family: "Font Awesome 6 Brands", serif;
           font-weight: 400;
           font-size: 30px;
           color: black;
         }
-        .youtube:before{
+
+        .youtube:before {
           content: "\f167";
           font-family: "Font Awesome 6 Brands", serif;
           font-weight: 400;
           font-size: 30px;
           color: black;
         }
-        .fb:before{
+
+        .fb:before {
           content: "\f39e";
           font-family: "Font Awesome 6 Brands", serif;
           font-weight: 400;
@@ -985,8 +1007,6 @@ body.touch .arrow {
     }
   }
 }
-
-
 
 //===================================
 
