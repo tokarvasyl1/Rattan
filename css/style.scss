@@ -104,32 +104,103 @@ body {
 
 //===================================
 .header {
+  position: relative;
 
   .logo_row {
     background: #FFFFFF;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
     padding: 25px 0 25px 0;
     margin-bottom: 33px;
+    position: relative;
+    z-index: 3;
+    @include max-screen(768px){
+      padding: 10px;
+    }
+
 
     .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
+      .header_burger {
+        display: none;
+        position: relative;
+        width: 35px;
+        height: 20px;
+        @include max-screen(768px){
+          display: block;
+        }
+        span{
+          position: absolute;
+          background-color: #2E8B1F;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          top: 9px;
+          transition: all 0.4s ease 0s;
+        }
+        &:before, &:after{
+        content: "";
+          background-color: #2E8B1F;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.4s ease 0s;
+        }
+        &:before{
+          top: 0;
+        }
+        &:after{
+          bottom: 0;
+        }
+        &.active:before{
+          transform: rotate(45deg);
+          top: 9px;
+        }
+        &.active:after{
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+        &.active span{
+          transform: scale(0 );
+        }
+      }
+
       .logo {
+        @include max-screen(768px){
+          margin: auto;
+
+        }
         img {
           display: block;
           width: 100%;
+          @include max-screen(900px){
+            width: 80%;
+          }
+          @include max-screen(768px){
+            //width: 100%;
+          }
 
         }
       }
 
       .header_pages {
+        @include max-screen(768px){
+          display: none;
+        }
         ul {
           display: flex;
 
           li {
             margin-right: 69px;
+            @include max-screen(980px){
+              margin-right: 40px;
+            }
+            @include max-screen(800px){
+              margin-right: 25px;
+            }
 
             a {
               font-family: 'Alegreya Sans 400', serif;
@@ -138,6 +209,9 @@ body {
               font-size: 18px;
               letter-spacing: 0.015em;
               color: #000000;
+              @include max-screen(850px){
+                font-size: 15px;
+              }
             }
 
             &:last-of-type {
@@ -153,6 +227,9 @@ body {
 
         .language-switch {
           margin-right: 50px;
+          @include max-screen(1050px){
+            display: none;
+          }
         }
 
         .tel {
@@ -163,6 +240,9 @@ body {
             font-size: 16px;
             letter-spacing: 0.015em;
             color: #000000;
+            @include max-screen(768px){
+              display: none;
+            }
           }
 
           a {
@@ -172,6 +252,9 @@ body {
             font-size: 13px;
             letter-spacing: 0.015em;
             color: #000000;
+            @include max-screen(768px){
+              display: none;
+            }
           }
         }
       }
@@ -181,11 +264,29 @@ body {
   .menu_line {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 85px;
+    @include max-screen(768px){
+      border-bottom: inherit;
+    }
   }
 
   .menu {
     position: relative;
     z-index: 2;
+    @include max-screen(768px){
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(232, 232, 232, 1);
+      transition: all 0.4s ease 0s;
+      padding: 80px 15px;
+
+    }
+    &.active{
+      top: 0;
+      transition: all 0.4s ease 0s;
+    }
   }
 
   .menu a {
@@ -229,6 +330,7 @@ body {
     background: #F5F5F5;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+
   }
 
   .sub-menu__list > li {
@@ -301,12 +403,6 @@ body {
       margin: 0 0 10px 0;
     }
     .sub-menu__list {
-      position: relative;
-      left: 0;
-      top: 0;
-    }
-    .sub-sub-menu__list {
-      padding: 0 5px;
       position: relative;
       left: 0;
       top: 0;

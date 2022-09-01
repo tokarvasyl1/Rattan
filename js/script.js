@@ -47,17 +47,16 @@ if(isMobile.any()){
 }
 
 
-
-
-
-
-
-
-$(document).ready(function () {
-    $('.footer_tittle').click(function (event) {
-        $('.footer_items').toggleClass('active');
+$(document).ready(function (){
+    $('.header_burger').click(function(event) {
+        $('.header_burger,.menu').toggleClass('active');
     })
 })
+
+
+
+
+
 
 
 
