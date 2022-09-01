@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.eot');
+    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('AlegreyaSans-Bold.eot');
+    src: url('AlegreyaSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AlegreyaSans-Bold.woff2') format('woff2'),
+        url('AlegreyaSans-Bold.woff') format('woff'),
+        url('AlegreyaSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('AlegreyaSans-Medium.eot');
+    src: url('AlegreyaSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AlegreyaSans-Medium.woff2') format('woff2'),
+        url('AlegreyaSans-Medium.woff') format('woff'),
+        url('AlegreyaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('AlegreyaSans-Light.eot');
+    src: url('AlegreyaSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('AlegreyaSans-Light.woff2') format('woff2'),
+        url('AlegreyaSans-Light.woff') format('woff'),
+        url('AlegreyaSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('AlegreyaSans-Regular.eot');
+    src: url('AlegreyaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AlegreyaSans-Regular.woff2') format('woff2'),
+        url('AlegreyaSans-Regular.woff') format('woff'),
+        url('AlegreyaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

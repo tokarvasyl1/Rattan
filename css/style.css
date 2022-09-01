@@ -1,0 +1,626 @@
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.css);
+@font-face {
+  font-family: 'Roboto 400';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Alegreya Sans 700';
+  src: url("../fonts/AlegreyaSans-Bold.eot");
+  src: url("../fonts/AlegreyaSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AlegreyaSans-Bold.woff2") format("woff2"), url("../fonts/AlegreyaSans-Bold.woff") format("woff"), url("../fonts/AlegreyaSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Alegreya Sans 500';
+  src: url("../fonts/AlegreyaSans-Medium.eot");
+  src: url("../fonts/AlegreyaSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AlegreyaSans-Medium.woff2") format("woff2"), url("../fonts/AlegreyaSans-Medium.woff") format("woff"), url("../fonts/AlegreyaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Alegreya Sans 300';
+  src: url("../fonts/AlegreyaSans-Light.eot");
+  src: url("../fonts/AlegreyaSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AlegreyaSans-Light.woff2") format("woff2"), url("../fonts/AlegreyaSans-Light.woff") format("woff"), url("../fonts/AlegreyaSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Alegreya Sans 400';
+  src: url("../fonts/AlegreyaSans-Regular.eot");
+  src: url("../fonts/AlegreyaSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AlegreyaSans-Regular.woff2") format("woff2"), url("../fonts/AlegreyaSans-Regular.woff") format("woff"), url("../fonts/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul, li, ol {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit; }
+
+body {
+  height: 100%;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.header .logo_row {
+  background: #FFFFFF;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  padding: 25px 0 25px 0;
+  margin-bottom: 33px; }
+  .header .logo_row .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .logo_row .container .logo img {
+      display: block;
+      width: 100%; }
+    .header .logo_row .container .header_pages ul {
+      display: flex; }
+      .header .logo_row .container .header_pages ul li {
+        margin-right: 69px; }
+        .header .logo_row .container .header_pages ul li a {
+          font-family: 'Alegreya Sans 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          letter-spacing: 0.015em;
+          color: #000000; }
+        .header .logo_row .container .header_pages ul li:last-of-type {
+          margin-right: 0; }
+    .header .logo_row .container .languages_tel {
+      display: flex;
+      align-items: center; }
+      .header .logo_row .container .languages_tel .language-switch {
+        margin-right: 50px; }
+      .header .logo_row .container .languages_tel .tel p {
+        font-family: 'Roboto 400', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.015em;
+        color: #000000; }
+      .header .logo_row .container .languages_tel .tel a {
+        font-family: 'Roboto 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 0.015em;
+        color: #000000; }
+.header .menu_line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 85px; }
+.header .menu {
+  position: relative;
+  z-index: 2; }
+.header .menu a {
+  text-decoration: none; }
+.header .menu a.parent {
+  margin: 0 30px 0 0; }
+.header .menu li {
+  position: relative;
+  list-style: none; }
+.header .menu__list {
+  display: flex;
+  margin-bottom: 32px; }
+.header .menu__list > li {
+  margin: 0 80px 0 0; }
+.header .menu__link {
+  font-family: 'Alegreya Sans 400', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000; }
+.header .sub-menu__list {
+  display: none;
+  min-width: 400px;
+  position: absolute;
+  left: 0;
+  top: 37px;
+  padding: 24px 4px 24px 0;
+  background: #F5F5F5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px; }
+.header .sub-menu__list > li:before {
+  content: "\f6c0";
+  display: inline-block;
+  font-family: "Font Awesome 6 Free", serif;
+  font-weight: 1000;
+  font-size: 20px;
+  margin: 0 0 0 20px; }
+.header .sub-menu__list > li:hover {
+  background: #2E8B1F;
+  opacity: 0.8;
+  border-radius: 0 50px 50px 0; }
+.header .sub-menu__link {
+  font-family: 'Alegreya Sans 400', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  margin-left: 10px;
+  padding: 5px 0 5px 0; }
+.header .arrow {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent; }
+.header .arrow.active {
+  transform: rotate(-180deg); }
+.header .sub-menu__arrow.arrow {
+  right: 10px;
+  border-left: 10px solid #000;
+  border-right: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; }
+@media (max-width: 767px) {
+  .header .wrapper {
+    padding: 15px; }
+  .header .menu__list {
+    display: block; }
+  .header .menu__list > li {
+    margin: 0 0 10px 0; }
+  .header .sub-menu__list {
+    position: relative;
+    left: 0;
+    top: 0; }
+  .header .sub-sub-menu__list {
+    padding: 0 5px;
+    position: relative;
+    left: 0;
+    top: 0; }
+  .header .sub-menu__arrow.arrow {
+    right: 10px;
+    top: 15px;
+    border-bottom: none;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #000;
+    border-right: 10px solid transparent; } }
+
+body.mouse .menu__list > li:hover .sub-menu__list {
+  display: block; }
+
+body.touch .sub-menu__list.open {
+  display: block; }
+
+body.touch .arrow {
+  display: block; }
+
+.slider {
+  margin-bottom: 85px; }
+  .slider .container .slider_item {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 466px; }
+    .slider .container .slider_item img {
+      display: block;
+      width: 100%;
+      object-fit: cover; }
+    .slider .container .slider_item h2 {
+      font-family: 'Alegreya Sans 700', serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      color: #FFFFFF;
+      position: absolute;
+      top: 150px;
+      left: 100px; }
+    .slider .container .slider_item a {
+      position: absolute;
+      top: 250px;
+      left: 100px;
+      font-family: 'Alegreya Sans 400', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 117.66%;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 16px 45px;
+      background: #2E8B1F;
+      border-radius: 60px; }
+
+.popular_models {
+  margin-bottom: 153px; }
+  .popular_models .popular_model_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px 5px; }
+    @media screen and (max-width: 849px) {
+      .popular_models .popular_model_items {
+        justify-content: space-around; } }
+    .popular_models .popular_model_items .popular_model_item {
+      flex-basis: 270px;
+      flex-shrink: 0;
+      background: #FFFFFF;
+      box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      padding: 26px 0 40px 0; }
+      @media screen and (max-width: 849px) {
+        .popular_models .popular_model_items .popular_model_item {
+          flex-basis: 300px; } }
+      @media screen and (max-width: 635px) {
+        .popular_models .popular_model_items .popular_model_item {
+          flex-basis: 80%; } }
+      .popular_models .popular_model_items .popular_model_item .item_img {
+        max-width: 244px;
+        width: 100%;
+        height: 209px;
+        margin: auto auto 10px; }
+        .popular_models .popular_model_items .popular_model_item .item_img img {
+          display: block;
+          width: 100%; }
+      .popular_models .popular_model_items .popular_model_item .item_name {
+        margin: 0 32px 14px 32px; }
+        .popular_models .popular_model_items .popular_model_item .item_name p {
+          font-family: 'Alegreya Sans 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          color: #000000; }
+          @media screen and (max-width: 450px) {
+            .popular_models .popular_model_items .popular_model_item .item_name p {
+              font-size: 22px; } }
+      .popular_models .popular_model_items .popular_model_item .item_size {
+        margin: 0 32px 14px 32px;
+        display: flex; }
+        .popular_models .popular_model_items .popular_model_item .item_size p, .popular_models .popular_model_items .popular_model_item .item_size span {
+          font-family: 'Alegreya Sans 300', serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 22px;
+          color: darkgray; }
+          @media screen and (max-width: 450px) {
+            .popular_models .popular_model_items .popular_model_item .item_size p, .popular_models .popular_model_items .popular_model_item .item_size span {
+              font-size: 18px; } }
+        .popular_models .popular_model_items .popular_model_item .item_size p {
+          margin-right: 8px; }
+      .popular_models .popular_model_items .popular_model_item .item_price {
+        margin: 0 32px 5px 32px; }
+        .popular_models .popular_model_items .popular_model_item .item_price p {
+          font-family: 'Roboto 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 35px;
+          color: #000000;
+          text-align: center; }
+      .popular_models .popular_model_items .popular_model_item .item_btn {
+        display: flex;
+        justify-content: center; }
+        .popular_models .popular_model_items .popular_model_item .item_btn a {
+          padding: 15px 50px;
+          font-family: 'Alegreya Sans 300', serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 25px;
+          color: #2E8B1F;
+          border: 1px solid #2E8B1F;
+          border-radius: 40px;
+          transition: 0.1s ease; }
+          @media screen and (max-width: 635px) {
+            .popular_models .popular_model_items .popular_model_item .item_btn a {
+              width: 90%;
+              text-align: center; } }
+          .popular_models .popular_model_items .popular_model_item .item_btn a:hover {
+            background-color: #2E8B1F;
+            color: white;
+            transition: 0.1s ease; }
+
+.about_us {
+  margin-bottom: 50px; }
+  .about_us h2 {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 40px; }
+  .about_us .about_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .about_us .about_row .about_left {
+      padding: 41px 35px;
+      flex-basis: 50%;
+      background: #FFFFFF;
+      box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 20px; }
+      @media screen and (max-width: 1000px) {
+        .about_us .about_row .about_left {
+          flex-basis: 55%; } }
+      @media screen and (max-width: 900px) {
+        .about_us .about_row .about_left {
+          flex-basis: 100%;
+          margin-bottom: 20px; } }
+      @media screen and (max-width: 600px) {
+        .about_us .about_row .about_left {
+          padding: 20px 20px; } }
+      .about_us .about_row .about_left p {
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000; }
+        @media screen and (max-width: 450px) {
+          .about_us .about_row .about_left p {
+            font-size: 15px; } }
+    .about_us .about_row .about_right {
+      flex-basis: 40%;
+      border-radius: 20px;
+      overflow: hidden; }
+      @media screen and (max-width: 900px) {
+        .about_us .about_row .about_right {
+          flex-basis: 100%; } }
+      .about_us .about_row .about_right img {
+        display: block;
+        width: 100%; }
+
+.contact_us {
+  margin-bottom: 35px; }
+  .contact_us .container {
+    display: flex;
+    flex-wrap: wrap; }
+  .contact_us .contact_left {
+    padding: 23px 55px 23px 55px;
+    flex-basis: 60%;
+    background: #FFFFFF;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px 0 0 20px; }
+    @media screen and (max-width: 1050px) {
+      .contact_us .contact_left {
+        flex-basis: 50%;
+        padding: 23px 20px; } }
+    @media screen and (max-width: 800px) {
+      .contact_us .contact_left {
+        flex-basis: 100%;
+        border-radius: 20px;
+        margin-bottom: 20px; } }
+  .contact_us .tel {
+    margin-bottom: 25px; }
+  .contact_us .email {
+    margin-bottom: 25px; }
+  .contact_us .working_time {
+    margin-bottom: 25px; }
+  .contact_us h3 {
+    font-family: 'Alegreya Sans 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 1050px) {
+      .contact_us h3 {
+        font-size: 30px; } }
+  .contact_us .tittle {
+    font-family: 'Alegreya Sans 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 12px; }
+    @media screen and (max-width: 900px) {
+      .contact_us .tittle {
+        font-size: 20px; } }
+  .contact_us .sales, .contact_us .logistic {
+    font-family: 'Alegreya Sans 300', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: darkgray; }
+    @media screen and (max-width: 900px) {
+      .contact_us .sales, .contact_us .logistic {
+        font-size: 16px; } }
+    .contact_us .sales > span, .contact_us .logistic > span {
+      font-family: 'Alegreya Sans 500', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      color: #000000;
+      margin-left: 10px; }
+      @media screen and (max-width: 900px) {
+        .contact_us .sales > span, .contact_us .logistic > span {
+          font-size: 16px; } }
+  .contact_us .heo > span {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000; }
+    @media screen and (max-width: 1050px) {
+      .contact_us .heo > span {
+        font-size: 16px; } }
+  .contact_us .contact_right {
+    flex-basis: 40%;
+    background: #FFFFFF;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 0 20px 20px 0; }
+    @media screen and (max-width: 1050px) {
+      .contact_us .contact_right {
+        flex-basis: 50%; } }
+    @media screen and (max-width: 800px) {
+      .contact_us .contact_right {
+        flex-basis: 100%;
+        border-radius: 20px;
+        height: 300px;
+        overflow: hidden; } }
+
+.footer {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.25);
+  padding: 40px 0 50px 0; }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 800px) {
+      .footer .container {
+        justify-content: space-around; } }
+    .footer .container .footer_logo {
+      max-width: 196px;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        .footer .container .footer_logo {
+          max-width: inherit;
+          flex-basis: 40%;
+          order: 3; } }
+      @media screen and (max-width: 400px) {
+        .footer .container .footer_logo {
+          flex-basis: 100%;
+          order: 4;
+          text-align: center; } }
+      .footer .container .footer_logo img {
+        display: block;
+        width: 80%;
+        margin-bottom: 40px; }
+        @media screen and (max-width: 800px) {
+          .footer .container .footer_logo img {
+            width: 150px; } }
+        @media screen and (max-width: 400px) {
+          .footer .container .footer_logo img {
+            margin: auto; } }
+      .footer .container .footer_logo a {
+        display: block;
+        font-family: 'Roboto 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000;
+        opacity: 0.6;
+        margin-bottom: 19px; }
+        .footer .container .footer_logo a:first-of-type {
+          opacity: 1; }
+    .footer .container .footer_company {
+      max-width: 190px;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        .footer .container .footer_company {
+          max-width: inherit;
+          flex-basis: 40%;
+          order: 1; } }
+      .footer .container .footer_company h4 {
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px; }
+      .footer .container .footer_company a {
+        display: block;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px; }
+    .footer .container .footer_goods {
+      max-width: 190px;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        .footer .container .footer_goods {
+          max-width: inherit;
+          flex-basis: 40%;
+          order: 1;
+          margin-bottom: 50px; } }
+      .footer .container .footer_goods h4 {
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px; }
+      .footer .container .footer_goods a {
+        display: block;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px; }
+    .footer .container .footer_contacts {
+      max-width: 190px;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        .footer .container .footer_contacts {
+          max-width: inherit;
+          flex-basis: 40%;
+          order: 4; } }
+      @media screen and (max-width: 400px) {
+        .footer .container .footer_contacts {
+          flex-basis: 100%;
+          order: 3;
+          text-align: center; } }
+      .footer .container .footer_contacts p {
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000; }
+      .footer .container .footer_contacts .footer_tel {
+        font-family: 'Alegreya Sans 500', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        color: #000000;
+        margin-bottom: 12px;
+        cursor: pointer;
+        display: block; }
+      .footer .container .footer_contacts .footer_social {
+        display: flex;
+        justify-content: space-between; }
+        @media screen and (max-width: 800px) {
+          .footer .container .footer_contacts .footer_social {
+            justify-content: space-around; } }
+        @media screen and (max-width: 400px) {
+          .footer .container .footer_contacts .footer_social {
+            margin-bottom: 30px; } }
+        .footer .container .footer_contacts .footer_social a {
+          display: block; }
+        .footer .container .footer_contacts .footer_social span:before {
+          content: "";
+          display: inline-block; }
+        .footer .container .footer_contacts .footer_social .inst:before {
+          content: "\f16d";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black; }
+        .footer .container .footer_contacts .footer_social .youtube:before {
+          content: "\f167";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black; }
+        .footer .container .footer_contacts .footer_social .fb:before {
+          content: "\f39e";
+          font-family: "Font Awesome 6 Brands", serif;
+          font-weight: 400;
+          font-size: 30px;
+          color: black; }
+
+/*# sourceMappingURL=style.css.map */
