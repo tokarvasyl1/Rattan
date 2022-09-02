@@ -150,7 +150,10 @@ body {
             font-weight: 400;
             font-size: 18px;
             letter-spacing: 0.015em;
-            color: #000000; }
+            color: #000000;
+            display: inline-block; }
+            .header .logo_row .container .header_pages ul li a:hover {
+              opacity: 0.5; }
             @media screen and (max-width: 850px) {
               .header .logo_row .container .header_pages ul li a {
                 font-size: 15px; } }
@@ -164,26 +167,38 @@ body {
           @media screen and (max-width: 1050px) {
             .header .logo_row .container .languages_tel .language-switch {
               display: none; } }
-        .header .logo_row .container .languages_tel .tel p {
-          font-family: 'Roboto 400', serif;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          letter-spacing: 0.015em;
-          color: #000000; }
-          @media screen and (max-width: 768px) {
-            .header .logo_row .container .languages_tel .tel p {
-              display: none; } }
-        .header .logo_row .container .languages_tel .tel a {
-          font-family: 'Roboto 400', serif;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 13px;
-          letter-spacing: 0.015em;
-          color: #000000; }
-          @media screen and (max-width: 768px) {
-            .header .logo_row .container .languages_tel .tel a {
-              display: none; } }
+        .header .logo_row .container .languages_tel .tel {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .header .logo_row .container .languages_tel .tel .mob_tel {
+            font-family: 'Roboto 400', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.015em;
+            color: #000000;
+            display: block;
+            margin-bottom: 5px; }
+            @media screen and (max-width: 768px) {
+              .header .logo_row .container .languages_tel .tel .mob_tel {
+                display: none; } }
+          .header .logo_row .container .languages_tel .tel .tel_btn {
+            font-family: 'Roboto 400', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.015em;
+            color: white;
+            padding: 7px 10px;
+            background-color: #2E8B1F;
+            display: block;
+            border-radius: 20px; }
+            .header .logo_row .container .languages_tel .tel .tel_btn:hover {
+              opacity: 0.8; }
+            @media screen and (max-width: 768px) {
+              .header .logo_row .container .languages_tel .tel .tel_btn {
+                display: none; } }
   .header .menu_line {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 85px; }
@@ -641,6 +656,8 @@ body.touch .arrow {
         font-size: 18px;
         color: #000000;
         margin-bottom: 10px; }
+        .footer .container .footer_company a:hover {
+          opacity: 0.5; }
     .footer .container .footer_goods {
       max-width: 190px;
       width: 100%; }
@@ -665,6 +682,8 @@ body.touch .arrow {
         font-size: 18px;
         color: #000000;
         margin-bottom: 10px; }
+        .footer .container .footer_goods a:hover {
+          opacity: 0.5; }
     .footer .container .footer_contacts {
       max-width: 190px;
       width: 100%; }
@@ -672,7 +691,8 @@ body.touch .arrow {
         .footer .container .footer_contacts {
           max-width: inherit;
           flex-basis: 40%;
-          order: 4; } }
+          order: 4;
+          text-align: center; } }
       @media screen and (max-width: 400px) {
         .footer .container .footer_contacts {
           flex-basis: 100%;
@@ -702,11 +722,8 @@ body.touch .arrow {
         @media screen and (max-width: 400px) {
           .footer .container .footer_contacts .footer_social {
             margin-bottom: 30px; } }
-        .footer .container .footer_contacts .footer_social a {
-          display: block; }
-        .footer .container .footer_contacts .footer_social span:before {
-          content: "";
-          display: inline-block; }
+        .footer .container .footer_contacts .footer_social a:hover:before {
+          color: #2E8B1F; }
         .footer .container .footer_contacts .footer_social .inst:before {
           content: "\f16d";
           font-family: "Font Awesome 6 Brands", serif;

@@ -233,6 +233,10 @@ body {
               font-size: 18px;
               letter-spacing: 0.015em;
               color: #000000;
+              display: inline-block;
+              &:hover{
+                opacity: 0.5;
+              }
               @include max-screen(850px) {
                 font-size: 15px;
               }
@@ -257,25 +261,38 @@ body {
         }
 
         .tel {
-          p {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .mob_tel {
             font-family: 'Roboto 400', serif;
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
             letter-spacing: 0.015em;
             color: #000000;
+            display: block;
+            margin-bottom: 5px;
+
             @include max-screen(768px) {
               display: none;
             }
           }
 
-          a {
+          .tel_btn {
             font-family: 'Roboto 400', serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 14px;
             letter-spacing: 0.015em;
-            color: #000000;
+            color: white;
+            padding: 7px 10px;
+            background-color: #2E8B1F;
+            display: block;
+            border-radius: 20px;
+            &:hover{
+              opacity: 0.8;
+            }
             @include max-screen(768px) {
               display: none;
             }
@@ -920,6 +937,9 @@ body.touch .arrow {
         font-size: 18px;
         color: #000000;
         margin-bottom: 10px;
+        &:hover{
+          opacity: 0.5;
+        }
 
       }
     }
@@ -952,6 +972,9 @@ body.touch .arrow {
         font-size: 18px;
         color: #000000;
         margin-bottom: 10px;
+        &:hover{
+          opacity: 0.5;
+        }
 
       }
     }
@@ -963,6 +986,7 @@ body.touch .arrow {
         max-width: inherit;
         flex-basis: 40%;
         order: 4;
+        text-align: center;
       }
       @include max-screen(400px) {
         flex-basis: 100%;
@@ -995,6 +1019,7 @@ body.touch .arrow {
       .footer_social {
         display: flex;
         justify-content: space-between;
+
         @include max-screen(800px) {
           justify-content: space-around;
         }
@@ -1002,15 +1027,14 @@ body.touch .arrow {
           margin-bottom: 30px;
         }
 
-        a {
-          display: block;
-        }
+        //a {
+        //  display: block;
+        //}
 
-        span:before {
-          content: "";
-          display: inline-block;
-        }
 
+        a:hover:before{
+          color: #2E8B1F;
+        }
         .inst:before {
           content: "\f16d";
           font-family: "Font Awesome 6 Brands", serif;
@@ -1033,6 +1057,7 @@ body.touch .arrow {
           font-weight: 400;
           font-size: 30px;
           color: black;
+
         }
       }
     }
