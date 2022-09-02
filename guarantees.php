@@ -16,7 +16,11 @@
     include('header.php')
     ?>
     <div class="main">
-        <h1>Гарантії</h1>
+        <section class="guarantees">
+            <div class="container">
+                <h1><span>Гарантій</span><br> немає</h1>
+            </div>
+        </section>
     </div>
     <?php
     include('footer.php')

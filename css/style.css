@@ -588,6 +588,47 @@ body.touch .arrow {
         height: 300px;
         overflow: hidden; } }
 
+.payment h1 {
+  font-family: 'Alegreya Sans 500', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 121%;
+  color: #000000;
+  margin-bottom: 26px; }
+.payment img {
+  display: block;
+  width: 100%;
+  margin-bottom: 46px; }
+.payment h2 {
+  font-family: 'Alegreya Sans 400', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 26px; }
+.payment p {
+  font-family: 'Alegreya Sans 400', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 171.7%;
+  color: #000000;
+  margin-bottom: 26px; }
+
+.guarantees {
+  background-color: burlywood; }
+  .guarantees h1 {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: yellow;
+    text-align: center; }
+  .guarantees span {
+    color: cornflowerblue; }
+
 .footer {
   background: #FFFFFF;
   box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.25);
