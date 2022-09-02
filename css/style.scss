@@ -234,9 +234,11 @@ body {
               letter-spacing: 0.015em;
               color: #000000;
               display: inline-block;
-              &:hover{
+
+              &:hover {
                 opacity: 0.5;
               }
+
               @include max-screen(850px) {
                 font-size: 15px;
               }
@@ -264,6 +266,7 @@ body {
           display: flex;
           flex-direction: column;
           align-items: center;
+
           .mob_tel {
             font-family: 'Roboto 400', serif;
             font-style: normal;
@@ -290,9 +293,11 @@ body {
             background-color: #2E8B1F;
             display: block;
             border-radius: 20px;
-            &:hover{
+
+            &:hover {
               opacity: 0.8;
             }
+
             @include max-screen(768px) {
               display: none;
             }
@@ -855,32 +860,56 @@ body.touch .arrow {
 
 
 //===================================
-.payment{
+.about{
+  padding-bottom: 80px;
   h1{
     font-family: 'Alegreya Sans 500', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    line-height: 121%;
     color: #000000;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
-  img{
-    display: block;
-    width: 100%;
-    margin-bottom: 46px;
-  }
-  h2{
-    font-family: 'Alegreya Sans 400', serif;
+  p{
+    font-family: 'Alegreya Sans 400';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 28px;
+    font-size: 20px;
+    color: #000000;
+  }
+}
+//===================================
+
+//===================================
+.payment {
+  h1 {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
     color: #000000;
     margin-bottom: 26px;
   }
 
-  p{
+  img {
+    display: block;
+    width: 100%;
+    margin-bottom: 46px;
+  }
+
+  h2 {
+    font-family: 'Alegreya Sans 400', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 26px;
+    @include max-screen(500px){
+      font-size: 35px;
+    }
+  }
+
+  p {
     font-family: 'Alegreya Sans 400', serif;
     font-style: normal;
     font-weight: 400;
@@ -888,16 +917,21 @@ body.touch .arrow {
     line-height: 171.7%;
     color: #000000;
     margin-bottom: 26px;
+    @include max-screen(500px){
+      font-size: 17px;
+    }
 
   }
 }
+
 //===================================
 
 
 //===================================
-.guarantees{
+.guarantees {
   background-color: burlywood;
-  h1{
+
+  h1 {
     font-family: 'Alegreya Sans 500', serif;
     font-style: normal;
     font-weight: 500;
@@ -905,8 +939,280 @@ body.touch .arrow {
     color: yellow;
     text-align: center;
   }
-  span{
+
+  span {
     color: cornflowerblue;
+  }
+}
+
+//===================================
+
+//===================================
+.contacts {
+  padding-bottom: 80px;
+  h1 {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 45px;
+
+  }
+
+  .info_contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include max-screen(768px) {
+      justify-content: center;
+    }
+
+    .contact_item {
+      flex-basis: 45%;
+      background: #FFFFFF;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      padding: 49px 30px 49px 30px;
+      margin-bottom: 40px;
+      @include max-screen(800px) {
+        flex-basis: 48%;
+      }
+      @include max-screen(768px) {
+        flex-basis: 80%;
+      }
+      @include max-screen(400px){
+        padding: 20px;
+      }
+
+      .contact_item_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .left_side {
+          h4 {
+            font-family: 'Alegreya Sans 400', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            color: #000000;
+            margin-bottom: 12px;
+            @include max-screen(930px) {
+              font-size: 20px;
+            }
+            @include max-screen(768px) {
+              font-size: 25px;
+            }
+
+          }
+
+          p {
+            font-family: 'Alegreya Sans 300', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            color: darkgrey;
+            display: inline-block;
+            @include max-screen(768px) {
+              font-size: 18px;
+            }
+            @include max-screen(400px){
+              font-size: 15px;
+            }
+          }
+
+          a {
+            font-family: 'Alegreya Sans 500', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: #000000;
+            margin-left: 20px;
+            @include max-screen(930px) {
+              font-size: 16px;
+            }
+            @include max-screen(768px) {
+              font-size: 20px;
+            }
+            @include max-screen(400px){
+              margin-left: inherit;
+              font-size: 15px;
+            }
+          }
+
+          span {
+            font-family: 'Alegreya Sans 500', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: #000000;
+            margin-left: 50px;
+            @include max-screen(930px) {
+              font-size: 16px;
+            }
+            @include max-screen(768px) {
+              font-size: 20px;
+            }
+            @include max-screen(400px){
+              font-size: 15px;
+            }
+          }
+
+          .contacts_location {
+            margin-left: inherit;
+            max-width: 80%;
+            @include max-screen(930px) {
+              font-size: 16px;
+            }
+            @include max-screen(768px) {
+              font-size: 20px;
+            }
+            @include max-screen(400px){
+              font-size: 16px;
+            }
+          }
+
+          .contact_mail {
+            font-size: 16px;
+            margin-left: 0;
+          }
+
+        }
+
+        .right_side {
+          display: flex;
+          align-items: center;
+          @include max-screen(550px){
+            display: none;
+
+          }
+        }
+      }
+    }
+  }
+
+  .left_side_row {
+    margin-bottom: 12px;
+  }
+
+  @include max-screen(930px) {
+    svg {
+      width: 50px;
+    }
+  }
+  @include max-screen(768px) {
+    svg {
+      width: 80px;
+    }
+  }
+  .contact_form_bg{
+    background: #FFFFFF;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 68px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    h2{
+      font-family: 'Alegreya Sans 400', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      color: #000000;
+      margin-bottom: 45px;
+      @include max-screen(500px){
+        font-size: 30px;
+      }
+    }
+    .form_row{
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      align-items: center;
+      @include max-screen(768px){
+        flex-direction: column;
+      }
+      label{
+        display: none;
+      }
+      input{
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 30px 10px 30px;
+        border: 1px solid #2E8B1F;
+        border-radius: 60px;
+        outline: none;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        @include max-screen(900px){
+          padding: 10px 15px;
+          font-size: 16px;
+        }
+        @include max-screen(768px){
+          width: 70%;
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
+        @include max-screen(500px){
+          width: 90%;
+        }
+      }
+      .name{
+        @include max-screen(768px){
+          width: 100%;
+        }
+      }
+      .btn{
+        @include max-screen(768px){
+          width: 100%;
+        }
+      }
+      .tel_number{
+        @include max-screen(768px){
+          width: 100%;
+        }
+      }
+      button{
+        padding: 10px 50px;
+        border-radius: 60px;
+        outline: none;
+        border: none;
+        background: #2E8B1F;
+        cursor: pointer;
+
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        @include max-screen(900px){
+          font-size: 16px;
+        }
+        @include max-screen(768px){
+          width: 70%;
+          font-size: 20px;
+        }
+        @include max-screen(500px){
+          width: 90%;
+        }
+        @include max-screen(400px){
+          padding: 10px 20px;
+          font-size: 18px;
+        }
+
+
+
+      }
+    }
+  }
+  .contact_map{
+    height: 340px;
+    overflow: hidden;
   }
 }
 
@@ -995,7 +1301,8 @@ body.touch .arrow {
         font-size: 18px;
         color: #000000;
         margin-bottom: 10px;
-        &:hover{
+
+        &:hover {
           opacity: 0.5;
         }
 
@@ -1030,7 +1337,8 @@ body.touch .arrow {
         font-size: 18px;
         color: #000000;
         margin-bottom: 10px;
-        &:hover{
+
+        &:hover {
           opacity: 0.5;
         }
 
@@ -1090,9 +1398,10 @@ body.touch .arrow {
         //}
 
 
-        a:hover:before{
+        a:hover:before {
           color: #2E8B1F;
         }
+
         .inst:before {
           content: "\f16d";
           font-family: "Font Awesome 6 Brands", serif;
@@ -1124,6 +1433,156 @@ body.touch .arrow {
 
 //===================================
 
+
+
+
+//===================================
+.main_category_list {
+  margin-bottom: 153px;
+
+  .model_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px 5px;
+    @include max-screen(849px) {
+      justify-content: space-around;
+    }
+
+    .model_item {
+      flex-basis: 270px;
+      flex-shrink: 0;
+      background: #FFFFFF;
+      box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      padding: 26px 0 40px 0;
+      @include max-screen(849px) {
+        flex-basis: 300px;
+      }
+      @include max-screen(635px) {
+        flex-basis: 80%;
+      }
+
+
+      .item_img {
+        max-width: 244px;
+        width: 100%;
+        height: 209px;
+        margin: auto auto 10px;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .item_name {
+        margin: 0 32px 14px 32px;
+
+        p {
+          font-family: 'Alegreya Sans 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          color: #000000;
+          @include max-screen(450px) {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .item_size {
+        margin: 0 32px 14px 32px;
+        display: flex;
+
+        p, span {
+          font-family: 'Alegreya Sans 300', serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 22px;
+          color: darkgray;
+          @include max-screen(450px) {
+            font-size: 18px;
+          }
+        }
+
+        p {
+          margin-right: 8px;
+        }
+      }
+
+      .item_price {
+        margin: 0 32px 5px 32px;
+
+        p {
+          font-family: 'Roboto 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 35px;
+          color: #000000;
+          text-align: center;
+        }
+      }
+
+      .item_btn {
+        display: flex;
+        justify-content: center;
+
+        a {
+          padding: 15px 50px;
+          font-family: 'Alegreya Sans 300', serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 25px;
+          color: #2E8B1F;
+          border: 1px solid #2E8B1F;
+          border-radius: 40px;
+          transition: 0.1s ease;
+          @include max-screen(635px) {
+            width: 90%;
+            text-align: center;
+          }
+
+          &:hover {
+            background-color: #2E8B1F;
+            color: white;
+            transition: 0.1s ease;
+
+          }
+        }
+
+
+      }
+    }
+  }
+  .pagination{
+    margin-top: 40px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .category_seo_text{
+
+    h1{
+      font-family: 'Alegreya Sans 700', serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      color: #000000;
+      text-align: center;
+    }
+    p{
+      font-family: 'Alegreya Sans 300', serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: #000000;
+    }
+  }
+}
+//===================================
 
 
 

@@ -588,12 +588,27 @@ body.touch .arrow {
         height: 300px;
         overflow: hidden; } }
 
+.about {
+  padding-bottom: 80px; }
+  .about h1 {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 20px; }
+  .about p {
+    font-family: 'Alegreya Sans 400';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000; }
+
 .payment h1 {
   font-family: 'Alegreya Sans 500', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
-  line-height: 121%;
   color: #000000;
   margin-bottom: 26px; }
 .payment img {
@@ -605,9 +620,11 @@ body.touch .arrow {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  line-height: 28px;
   color: #000000;
   margin-bottom: 26px; }
+  @media screen and (max-width: 500px) {
+    .payment h2 {
+      font-size: 35px; } }
 .payment p {
   font-family: 'Alegreya Sans 400', serif;
   font-style: normal;
@@ -616,6 +633,9 @@ body.touch .arrow {
   line-height: 171.7%;
   color: #000000;
   margin-bottom: 26px; }
+  @media screen and (max-width: 500px) {
+    .payment p {
+      font-size: 17px; } }
 
 .guarantees {
   background-color: burlywood; }
@@ -628,6 +648,222 @@ body.touch .arrow {
     text-align: center; }
   .guarantees span {
     color: cornflowerblue; }
+
+.contacts {
+  padding-bottom: 80px; }
+  .contacts h1 {
+    font-family: 'Alegreya Sans 500', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 45px; }
+  .contacts .info_contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .contacts .info_contact {
+        justify-content: center; } }
+    .contacts .info_contact .contact_item {
+      flex-basis: 45%;
+      background: #FFFFFF;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      padding: 49px 30px 49px 30px;
+      margin-bottom: 40px; }
+      @media screen and (max-width: 800px) {
+        .contacts .info_contact .contact_item {
+          flex-basis: 48%; } }
+      @media screen and (max-width: 768px) {
+        .contacts .info_contact .contact_item {
+          flex-basis: 80%; } }
+      @media screen and (max-width: 400px) {
+        .contacts .info_contact .contact_item {
+          padding: 20px; } }
+      .contacts .info_contact .contact_item .contact_item_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; }
+        .contacts .info_contact .contact_item .contact_item_info .left_side h4 {
+          font-family: 'Alegreya Sans 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          color: #000000;
+          margin-bottom: 12px; }
+          @media screen and (max-width: 930px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side h4 {
+              font-size: 20px; } }
+          @media screen and (max-width: 768px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side h4 {
+              font-size: 25px; } }
+        .contacts .info_contact .contact_item .contact_item_info .left_side p {
+          font-family: 'Alegreya Sans 300', serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          color: darkgrey;
+          display: inline-block; }
+          @media screen and (max-width: 768px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side p {
+              font-size: 18px; } }
+          @media screen and (max-width: 400px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side p {
+              font-size: 15px; } }
+        .contacts .info_contact .contact_item .contact_item_info .left_side a {
+          font-family: 'Alegreya Sans 500', serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          color: #000000;
+          margin-left: 20px; }
+          @media screen and (max-width: 930px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side a {
+              font-size: 16px; } }
+          @media screen and (max-width: 768px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side a {
+              font-size: 20px; } }
+          @media screen and (max-width: 400px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side a {
+              margin-left: inherit;
+              font-size: 15px; } }
+        .contacts .info_contact .contact_item .contact_item_info .left_side span {
+          font-family: 'Alegreya Sans 500', serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          color: #000000;
+          margin-left: 50px; }
+          @media screen and (max-width: 930px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side span {
+              font-size: 16px; } }
+          @media screen and (max-width: 768px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side span {
+              font-size: 20px; } }
+          @media screen and (max-width: 400px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side span {
+              font-size: 15px; } }
+        .contacts .info_contact .contact_item .contact_item_info .left_side .contacts_location {
+          margin-left: inherit;
+          max-width: 80%; }
+          @media screen and (max-width: 930px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side .contacts_location {
+              font-size: 16px; } }
+          @media screen and (max-width: 768px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side .contacts_location {
+              font-size: 20px; } }
+          @media screen and (max-width: 400px) {
+            .contacts .info_contact .contact_item .contact_item_info .left_side .contacts_location {
+              font-size: 16px; } }
+        .contacts .info_contact .contact_item .contact_item_info .left_side .contact_mail {
+          font-size: 16px;
+          margin-left: 0; }
+        .contacts .info_contact .contact_item .contact_item_info .right_side {
+          display: flex;
+          align-items: center; }
+          @media screen and (max-width: 550px) {
+            .contacts .info_contact .contact_item .contact_item_info .right_side {
+              display: none; } }
+  .contacts .left_side_row {
+    margin-bottom: 12px; }
+  @media screen and (max-width: 930px) {
+    .contacts svg {
+      width: 50px; } }
+  @media screen and (max-width: 768px) {
+    .contacts svg {
+      width: 80px; } }
+  .contacts .contact_form_bg {
+    background: #FFFFFF;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 68px 20px;
+    text-align: center;
+    margin-bottom: 40px; }
+    .contacts .contact_form_bg h2 {
+      font-family: 'Alegreya Sans 400', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      color: #000000;
+      margin-bottom: 45px; }
+      @media screen and (max-width: 500px) {
+        .contacts .contact_form_bg h2 {
+          font-size: 30px; } }
+    .contacts .contact_form_bg .form_row {
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      align-items: center; }
+      @media screen and (max-width: 768px) {
+        .contacts .contact_form_bg .form_row {
+          flex-direction: column; } }
+      .contacts .contact_form_bg .form_row label {
+        display: none; }
+      .contacts .contact_form_bg .form_row input {
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 30px 10px 30px;
+        border: 1px solid #2E8B1F;
+        border-radius: 60px;
+        outline: none;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px; }
+        @media screen and (max-width: 900px) {
+          .contacts .contact_form_bg .form_row input {
+            padding: 10px 15px;
+            font-size: 16px; } }
+        @media screen and (max-width: 768px) {
+          .contacts .contact_form_bg .form_row input {
+            width: 70%;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px; } }
+        @media screen and (max-width: 500px) {
+          .contacts .contact_form_bg .form_row input {
+            width: 90%; } }
+      @media screen and (max-width: 768px) {
+        .contacts .contact_form_bg .form_row .name {
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .contacts .contact_form_bg .form_row .btn {
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .contacts .contact_form_bg .form_row .tel_number {
+          width: 100%; } }
+      .contacts .contact_form_bg .form_row button {
+        padding: 10px 50px;
+        border-radius: 60px;
+        outline: none;
+        border: none;
+        background: #2E8B1F;
+        cursor: pointer;
+        font-family: 'Alegreya Sans 400', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF; }
+        @media screen and (max-width: 900px) {
+          .contacts .contact_form_bg .form_row button {
+            font-size: 16px; } }
+        @media screen and (max-width: 768px) {
+          .contacts .contact_form_bg .form_row button {
+            width: 70%;
+            font-size: 20px; } }
+        @media screen and (max-width: 500px) {
+          .contacts .contact_form_bg .form_row button {
+            width: 90%; } }
+        @media screen and (max-width: 400px) {
+          .contacts .contact_form_bg .form_row button {
+            padding: 10px 20px;
+            font-size: 18px; } }
+  .contacts .contact_map {
+    height: 340px;
+    overflow: hidden; }
 
 .footer {
   background: #FFFFFF;
@@ -783,5 +1019,112 @@ body.touch .arrow {
           font-weight: 400;
           font-size: 30px;
           color: black; }
+
+.main_category_list {
+  margin-bottom: 153px; }
+  .main_category_list .model_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px 5px; }
+    @media screen and (max-width: 849px) {
+      .main_category_list .model_items {
+        justify-content: space-around; } }
+    .main_category_list .model_items .model_item {
+      flex-basis: 270px;
+      flex-shrink: 0;
+      background: #FFFFFF;
+      box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      padding: 26px 0 40px 0; }
+      @media screen and (max-width: 849px) {
+        .main_category_list .model_items .model_item {
+          flex-basis: 300px; } }
+      @media screen and (max-width: 635px) {
+        .main_category_list .model_items .model_item {
+          flex-basis: 80%; } }
+      .main_category_list .model_items .model_item .item_img {
+        max-width: 244px;
+        width: 100%;
+        height: 209px;
+        margin: auto auto 10px; }
+        .main_category_list .model_items .model_item .item_img img {
+          display: block;
+          width: 100%; }
+      .main_category_list .model_items .model_item .item_name {
+        margin: 0 32px 14px 32px; }
+        .main_category_list .model_items .model_item .item_name p {
+          font-family: 'Alegreya Sans 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          color: #000000; }
+          @media screen and (max-width: 450px) {
+            .main_category_list .model_items .model_item .item_name p {
+              font-size: 22px; } }
+      .main_category_list .model_items .model_item .item_size {
+        margin: 0 32px 14px 32px;
+        display: flex; }
+        .main_category_list .model_items .model_item .item_size p, .main_category_list .model_items .model_item .item_size span {
+          font-family: 'Alegreya Sans 300', serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 22px;
+          color: darkgray; }
+          @media screen and (max-width: 450px) {
+            .main_category_list .model_items .model_item .item_size p, .main_category_list .model_items .model_item .item_size span {
+              font-size: 18px; } }
+        .main_category_list .model_items .model_item .item_size p {
+          margin-right: 8px; }
+      .main_category_list .model_items .model_item .item_price {
+        margin: 0 32px 5px 32px; }
+        .main_category_list .model_items .model_item .item_price p {
+          font-family: 'Roboto 400', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 35px;
+          color: #000000;
+          text-align: center; }
+      .main_category_list .model_items .model_item .item_btn {
+        display: flex;
+        justify-content: center; }
+        .main_category_list .model_items .model_item .item_btn a {
+          padding: 15px 50px;
+          font-family: 'Alegreya Sans 300', serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 25px;
+          color: #2E8B1F;
+          border: 1px solid #2E8B1F;
+          border-radius: 40px;
+          transition: 0.1s ease; }
+          @media screen and (max-width: 635px) {
+            .main_category_list .model_items .model_item .item_btn a {
+              width: 90%;
+              text-align: center; } }
+          .main_category_list .model_items .model_item .item_btn a:hover {
+            background-color: #2E8B1F;
+            color: white;
+            transition: 0.1s ease; }
+  .main_category_list .pagination {
+    margin-top: 40px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 70px; }
+  .main_category_list .category_seo_text h1 {
+    font-family: 'Alegreya Sans 700', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #000000;
+    text-align: center; }
+  .main_category_list .category_seo_text p {
+    font-family: 'Alegreya Sans 300', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000; }
 
 /*# sourceMappingURL=style.css.map */

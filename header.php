@@ -35,21 +35,25 @@
             </div>
             <ul class="menu__list">
                 <li>
-                    <a href="" class="menu__link">Каталог</a>
+                    <a href="catalog.php" class="menu__link">Каталог</a>
                     <span class="menu__arrow arrow"></span>
                     <ul class="sub-menu__list">
                         <li>
-                            <a href="" class="sub-menu__link">Стільці</a>
+                            <a href="category_page.php" class="sub-menu__link">Стільці</a>
                         </li>
                         <li>
-                            <a href="" class="sub-menu__link">Столи</a>
+                            <a href="#" class="sub-menu__link">Столи</a>
                         </li>
                         <li>
-                            <a href="" class="sub-menu__link">Дивани</a>
+                            <a href="#" class="sub-menu__link">Дивани</a>
                         </li>
                         <li>
-                            <a href="" class="sub-menu__link">Лежаки</a>
+                            <a href="#" class="sub-menu__link">Крісла</a>
                         </li>
+                        <li>
+                            <a href="#" class="sub-menu__link">Світильники</a>
+                        </li>
+
                     </ul>
                 </li>
                 <li>
