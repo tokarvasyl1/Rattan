@@ -55,11 +55,44 @@ $(document).ready(function (){
 })
 
 
+$(document).ready(function (){
+
+    $('.slider-main').slick({
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        asNavFor: '.slider-little'
+    });
+    $('.slider-little').slick({
+        arrows: false,
+        adaptiveHeight: true,
+        slidesToShow: 3,
+        asNavFor: '.slider-main',
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: false
+
+    });
+})
 
 
 
 
+function increaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+}
 
+function decreaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value < 1 ? value = 1 : '';
+    value--;
+    document.getElementById('number').value = value;
+}
 
 
 

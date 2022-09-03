@@ -255,6 +255,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/18846f0aad.js" crossorigin="anonymous"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
